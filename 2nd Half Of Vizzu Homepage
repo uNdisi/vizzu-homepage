@@ -1,0 +1,531 @@
+<style>
+
+/*==================================================
+ROW 1
+==================================================*/
+
+.home-row{
+
+display:grid;
+
+grid-template-columns:20% 50% 30%;
+
+gap:25px;
+
+margin:40px 0;
+
+align-items:start;
+
+}
+
+/*==================================================
+COMMON CARD
+==================================================*/
+
+.dashboard-card{
+
+background:#fff;
+
+border-radius:18px;
+
+padding:25px;
+
+border:1px solid #E8EDF5;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.dashboard-title{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:25px;
+
+}
+
+.dashboard-title h2{
+
+margin:0;
+
+font-size:28px;
+
+font-weight:800;
+
+color:#163B63;
+
+}
+
+.dashboard-title a{
+
+text-decoration:none;
+
+font-size:15px;
+
+font-weight:600;
+
+color:#2F6FE4;
+
+}
+
+/*==================================================
+DEPARTMENT PORTALS
+==================================================*/
+
+.department-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.department{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:15px;
+
+border-radius:14px;
+
+text-decoration:none;
+
+background:#F8FAFC;
+
+transition:.3s;
+
+}
+
+.department:hover{
+
+background:#fff;
+
+transform:translateX(5px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.department-icon{
+
+width:48px;
+
+height:48px;
+
+border-radius:12px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#fff;
+
+font-size:20px;
+
+}
+
+.department span{
+
+font-weight:700;
+
+color:#163B63;
+
+}
+
+.hr{background:#2F80ED;}
+
+.finance{background:#27AE60;}
+
+.it{background:#4A90E2;}
+
+.comms{background:#F4B400;}
+
+.projects{background:#8E44AD;}
+
+/*==================================================
+RESOURCES
+==================================================*/
+
+.resource-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+}
+
+.resource{
+
+background:#F8FAFC;
+
+border-radius:16px;
+
+padding:20px;
+
+text-decoration:none;
+
+transition:.3s;
+
+border:1px solid #EEF2F7;
+
+}
+
+.resource:hover{
+
+background:#fff;
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.resource-icon{
+
+width:58px;
+
+height:58px;
+
+border-radius:15px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:24px;
+
+color:#fff;
+
+margin-bottom:18px;
+
+}
+
+.resource h3{
+
+margin:0 0 10px;
+
+font-size:18px;
+
+color:#163B63;
+
+}
+
+.resource p{
+
+margin:0;
+
+font-size:14px;
+
+color:#667085;
+
+line-height:1.6;
+
+}
+
+.blue{background:#2F80ED;}
+
+.green{background:#27AE60;}
+
+.orange{background:#F39C12;}
+
+/*==================================================
+QUICK LINKS
+==================================================*/
+
+.quick-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:14px;
+
+}
+
+.quick-link{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:16px;
+
+border-radius:14px;
+
+background:#F8FAFC;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.quick-link:hover{
+
+background:#fff;
+
+transform:translateX(5px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.quick-link i{
+
+width:42px;
+
+height:42px;
+
+border-radius:12px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#163B63;
+
+color:#fff;
+
+font-size:18px;
+
+}
+
+.quick-link span{
+
+font-weight:700;
+
+color:#163B63;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1100px){
+
+.home-row{
+
+grid-template-columns:1fr;
+
+}
+
+.resource-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="home-row">
+
+
+
+<div class="dashboard-card">
+
+<div class="dashboard-title">
+
+<h2>Department Portals</h2>
+
+</div>
+
+<div class="department-list">
+
+<a href="/human-resources" class="department">
+
+<div class="department-icon hr">
+
+<i class="fa fa-users"></i>
+
+</div>
+
+<span>HR</span>
+
+</a>
+
+<a href="/Finance" class="department">
+
+<div class="department-icon finance">
+
+<i class="fa fa-line-chart"></i>
+
+</div>
+
+<span>Finance</span>
+
+</a>
+
+<a href="https://wildtrust.odoo.com/informatiion-communications-technology" class="department">
+
+<div class="department-icon it">
+
+<i class="fa fa-desktop"></i>
+
+</div>
+
+<span>IT</span>
+
+</a>
+
+</div> 
+</div> 
+
+
+
+<div class="dashboard-card">
+
+<div class="dashboard-title">
+
+<h2>Resources</h2>
+
+<a href="#">View all →</a>
+
+</div>
+
+<div class="resource-grid">
+
+<a href="#" class="resource">
+
+<div class="resource-icon blue">
+
+<i class="fa fa-book"></i>
+
+</div>
+
+<h3>Policies</h3>
+
+<p>Browse organisational policies and governance documents.</p>
+
+</a>
+
+<a href="#" class="resource">
+
+<div class="resource-icon green">
+
+<i class="fa fa-file-text-o"></i>
+
+</div>
+
+<h3>Forms</h3>
+
+<p>Download commonly used business forms.</p>
+
+</a>
+
+<a href="#" class="resource">
+
+<div class="resource-icon orange">
+
+<i class="fa fa-files-o"></i>
+
+</div>
+
+<h3>Templates</h3>
+
+<p>Corporate templates for reports and presentations.</p>
+
+</a>
+<a href="#" class="resource">
+
+<div class="resource-icon orange">
+
+<i class="fa fa-files-o"></i>
+
+</div>
+
+<h3>Templates</h3>
+
+<p>Corporate templates for reports and presentations.</p>
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="dashboard-card">
+
+<div class="dashboard-title">
+
+<h2>Quick Links</h2>
+
+</div>
+
+<div class="quick-list">
+
+<a href="https://online.sage.co.za/U65683#/dashboard" class="quick-link">
+
+<i class="fa fa-calendar"></i>
+
+<span>Apply for Leave</span>
+
+</a>
+
+<a href="#" class="quick-link">
+
+<i class="fa fa-laptop"></i>
+
+<span>IT Helpdesk</span>
+
+</a>
+
+<a href="https://wkf.ms/3X04MAg" class="quick-link">
+
+<i class="fa fa-credit-card"></i>
+
+<span>Submit Travel Claim</span>
+
+</a>
+
+<a href="https://wkf.ms/3XcLysQ" class="quick-link">
+
+<i class="fa fa-car"></i>
+
+<span>Book a Vehicle</span>
+
+</a>
+
+<a href="#" class="quick-link">
+
+<i class="fa fa-building"></i>
+
+<span>Meeting Rooms</span>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<style>
+</style>
